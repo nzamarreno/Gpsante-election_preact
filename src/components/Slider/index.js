@@ -13,19 +13,19 @@ class Slider extends Component {
                 
                 <div className="slider_wrapper">
                     <div className="slider_slide slider_slide--active" style="background-image: url(images/arthaud.jpg)">
-                        <h1 className="slider_slide_text">Nathalie <strong>Arthaud</strong></h1>
+                        <span className="slider_slide_text">Nathalie <strong>Arthaud</strong></span>
                     </div>
 
-                    <div className="slider_slide slider_slide--active" style="background-image: url(images/arthaud.jpg)">
-                        <h1 className="slider_slide_text">Nathalie <strong>Arthaud</strong></h1>
+                    <div className="slider_slide" style="background-image: url(images/arthaud.jpg)">
+                        <span className="slider_slide_text">Nathalie <strong>Arthaud</strong></span>
                     </div>
 
-                    <div className="slider_slide slider_slide--active" style="background-image: url(images/arthaud.jpg)">
-                        <h1 className="slider_slide_text">Nathalie <strong>Arthaud</strong></h1>
+                    <div className="slider_slide slider_slide--active" style="background-image: url(images/fillon.jpg)">
+                        <span className="slider_slide_text">Nathalie <strong>Arthaud</strong></span>
                     </div>
 
-                    <div className="slider_slide slider_slide--active" style="background-image: url(images/arthaud.jpg)">
-                        <h1 className="slider_slide_text">Nathalie <strong>Arthaud</strong></h1>
+                    <div className="slider_slide" style="background-image: url(images/arthaud.jpg)">
+                        <span className="slider_slide_text">Nathalie <strong>Arthaud</strong></span>
                     </div>
                 </div>
             </div>
