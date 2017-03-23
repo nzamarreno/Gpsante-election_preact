@@ -1,0 +1,66 @@
+@import '../../stylesheet/_config';
+@import '../../stylesheet/_mixins';
+
+.slider{
+    &_title{
+		@include font($font:$fontPrimary, $size:3rem, $line_height:3rem, $color:$colorPrimary, $font_weight:400);
+        padding-top: 4rem;
+
+        span{
+            @include font($font:$fontSecond, $size:5rem, $line_height:5rem, $color:$colorPrimary, $font_weight:400);
+        }
+
+        &:after{
+            content: "";
+            display: block;
+            height: .4rem;
+            width: 15rem;
+            background: $colorSecond;
+            margin: 3rem auto 4rem auto;
+        }
+    }
+
+    &_slide{
+        width: 21rem;
+        height: 11.5rem;
+        background-size: cover;
+        background-position: right top;
+        background-color: $colorPrimary;
+        background-blend-mode: screen;
+        overflow: hidden;
+        padding: 1rem;
+        position: relative;
+        border-radius: .5rem;
+        cursor: pointer;
+        margin: 0 1rem;
+        transition: 1s all;
+
+        display: inline-block;
+
+        &:hover{
+            box-shadow: 0px 0px 100px 3.09px rgba(0, 0, 0, 0.3);
+        }
+
+        &_text{
+            @include font($font:$fontPrimary, $size:1.6rem, $line_height:2rem, $color:$white, $font_weight:400);
+            margin: 0;
+
+            strong{
+                display: block;
+            }
+        }
+
+        &--active{
+            &:before{
+                content: '';
+                display: block;
+                position: absolute;
+                height: .8rem;
+                width: 100%;
+                background: $colorSecond;
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?Source+Sans+Pro');
+
+// @font-face {
+//   font-family: 'scala';
+//   src: url('/fonts/scala-Bold.eot'); /* IE9 Compat Modes */
+//   src: url('/fonts/scala-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+//        url('/fonts/scala-Bold.woff') format('woff'), /* Modern Browsers */
+//        url('/fonts/scala-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+//        url('/fonts/scala-Bold.svg#f665bbf4c06ef0fa26f7aefb226afbb1') format('svg'); /* Legacy iOS */
+
+//   font-style:   normal;
+//   font-weight:  400;
+// }
+
+@font-face {
+  font-family: 'Bebas';
+  src: url('/fonts/Bebas.woff') format('woff'); /* Safari, Android, iOS */
+
+  font-style:   normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'SkolaSans';
+  src: url('/fonts/SkolaSans-Bold.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/SkolaSans-Bold.eot?#iefix') format('embedded-opentype'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  700;
+}
+
+@font-face {
+  font-family: 'SkolaSans';
+  src: url('/fonts/SkolaSans-Regular.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/SkolaSans-Regular.eot?#iefix') format('embedded-opentype'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  400;
+}

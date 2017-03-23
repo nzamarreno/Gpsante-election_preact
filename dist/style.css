@@ -1,0 +1,13 @@
+.bonjour {
+  padding: 10rem; }
+  .bonjour_aurevoir {
+    background: red; }
+
+body {
+  background: blue;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGVBQWUsRUFBRTtFQUNqQjtJQUNFLGdCQUFnQixFQUFFOztBQUV0QjtFQUNFLGlCQUFpQjtFQUNqQixxQkFBYztFQUFkLHNCQUFjO0VBQWQscUJBQWM7RUFBZCxjQUFjLEVBQUUiLCJmaWxlIjoibWFpbi5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmJvbmpvdXIge1xuICBwYWRkaW5nOiAxMHJlbTsgfVxuICAuYm9uam91cl9hdXJldm9pciB7XG4gICAgYmFja2dyb3VuZDogcmVkOyB9XG5cbmJvZHkge1xuICBiYWNrZ3JvdW5kOiBibHVlO1xuICBkaXNwbGF5OiBmbGV4OyB9XG4iXX0= */

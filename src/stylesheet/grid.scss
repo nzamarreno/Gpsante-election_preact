@@ -1,0 +1,25 @@
+.wrapper{
+    width: 96rem;
+    margin: auto;
+}
+
+.row{
+    padding: 0 $gutter;
+    font-size: 0;
+}
+
+.no_gutter{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@for $i from 1 through $grid-columns {
+    .col-#{$i} { 
+        width: 100% / $grid-columns * $i;
+        padding-left: $gutter;
+        padding-right: $gutter;
+        position: relative;
+        display: inline-block;
+    }
+ 
+}

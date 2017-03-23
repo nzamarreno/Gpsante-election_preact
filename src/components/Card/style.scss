@@ -1,0 +1,19 @@
+@import '../../stylesheet/_config';
+@import '../../stylesheet/_mixins';
+
+.card{
+    margin-top: 4rem;
+    box-shadow: 0px 0px 99.91px 3.09px rgba(0, 0, 0, 0.2); 
+    border-radius: .8rem;
+
+    &_left{
+        background: $colorPrimary;
+        @include font($font:$fontSecond, $size:2rem, $line_height:7rem, $color:$colorPrimary, $font_weight:400);
+        border-top-left-radius: .8rem;
+        border-bottom-left-radius: .8rem;
+    }
+
+    &_right{
+        @include font($font:$fontSecond, $size:2rem, $line_height:7rem, $color:$colorPrimary, $font_weight:400);
+    }
+}
