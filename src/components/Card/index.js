@@ -2,8 +2,8 @@ import { h, Component } from 'preact';
 import './style';
 
 class Card extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
     }
 
     render() {

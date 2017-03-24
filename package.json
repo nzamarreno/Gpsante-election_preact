@@ -5,6 +5,7 @@
   "main": "main.js",
   "dependencies": {
     "event-emitter": "^0.3.5",
+    "flickity": "^2.0.5",
     "preact": "^7.2.0",
     "preact-compat": "^3.14.2"
   },

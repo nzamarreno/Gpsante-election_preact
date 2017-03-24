@@ -2,9 +2,8 @@ import { h, Component } from 'preact';
 import './style';
 
 class Header extends Component {
-
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
     }
 
     render() {
