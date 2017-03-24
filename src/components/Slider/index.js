@@ -1,5 +1,6 @@
 import { h, Component } from 'preact';
 import Flickity from 'flickity';
+import { default as Store } from 'core/Redux';
 import Datas from 'datas/Program';
 import './style';
 
@@ -18,17 +19,23 @@ class Slider extends Component {
     }
 
     handleClick(event) {
-        event.target.classList.add("slider_slide--active");
+        if(document.querySelectorAll(".slider_slide--active").length > 1){
+        }
+        else{
+            let currentCandidate = event.target;
+            currentCandidate.classList.toggle("slider_slide--active");
+            Store.dispatch({ type: 'ADD_CANDIDAT', candidate: Datas[currentCandidate.getAttribute('numberCandidate')] })
+        }
     }
 
     createSlider(props){
         let candidates = this.props.candidate;
-        return  candidates.map((candidate) => {
-            let divStyle = {
+        return  candidates.map((candidate, index) => {
+            let background = {
                 backgroundImage: 'url(images/' + candidate.pictureName + '.jpg)'
             };
             return (
-                <div onClick={event => this.handleClick(event)} className="slider_slide" style={divStyle}>
+                <div onClick={event => this.handleClick(event)} className="slider_slide" style={background} numberCandidate={index}>
                     <span className="slider_slide_text">{candidate.firstName} <strong>{candidate.lastName}</strong></span>
                 </div>
             )

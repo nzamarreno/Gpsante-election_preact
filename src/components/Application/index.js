@@ -1,15 +1,25 @@
 import { h, Component } from 'preact';
+
 import Header from 'components/Header';
 import Slider from 'components/Slider';
 import Card from 'components/Card';
 import Navbar from 'components/Navbar';
 import Argument from 'components/Argument';
+
 import Datas from 'datas/Program';
+import { default as Store } from 'core/Redux';
+
 
 
 class Application extends Component {
     constructor() {
         super();
+        this.init();
+    }
+
+    init() {
+        Store.dispatch({ type: 'ADD_CANDIDAT', candidate: Datas[0] });
+        Store.dispatch({ type: 'ADD_CANDIDAT', candidate: Datas[1] });
     }
 
     render(props) {
@@ -17,9 +27,9 @@ class Application extends Component {
             <div>
                 <Header/>
                 <Slider candidate={Datas}/>
-                <Card />
+                <Card store={Store.getState()}/>
                 <Navbar />
-                <Argument />
+                <Argument store={Store.getState()}/>
             </div>
         )
     }

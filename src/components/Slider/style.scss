@@ -60,7 +60,13 @@
                 background: $colorSecond;
                 bottom: 0;
                 left: 0;
+                animation: active 1s;
             }
         }
     }
+}
+
+@include keyframes(active) {
+    from {transform: translateY(.8rem);}
+    to {transform: translateY(0rem);}
 }
