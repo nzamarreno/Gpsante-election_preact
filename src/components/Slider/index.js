@@ -35,10 +35,18 @@ class Slider extends Component {
             type: 'ADD_CANDIDAT', 
             candidate: Datas[currentCandidate.getAttribute('numberCandidate')] 
         });
+
+        this.ChangeChoice(currentCandidate.getAttribute('numberCandidate'))
     }
 
-    ChangeChoice(){
-        let listCandidate = document.querySelectorAll(".slider_slide");       
+    ChangeChoice(indexCurrentCandidate){
+        let oldIndex = this.state.currentCandidate.slice();
+        let newIndex = oldIndex.push(indexCurrentCandidate);
+        let test = this.setState({
+            currentCandidate: newIndex
+        });
+        //let listCandidate = document.querySelectorAll(".slider_slide"); 
+        // Construct array with this.state.currentCandidate[1] and the new index
     }
 
     createSlider(props){

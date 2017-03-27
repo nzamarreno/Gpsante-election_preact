@@ -14,7 +14,6 @@ class Argument extends Component {
     }
 
     render(){
-        console.log("state", this.state)
         return (
             <div className="wrapper argument">
                 <div className="row argument_candidate">
