@@ -6,9 +6,10 @@
     text-align: center;
     margin: 0;
     padding: 0;
-    display: inline-block;
+    display: table;
     border-bottom: solid .1rem $colorPrimary;
-    margin: 4rem 0;    
+    margin: 4rem auto;   
+    text-align: center; 
 
     &--active{
         border-bottom: solid .3rem $colorSecond;
@@ -16,14 +17,15 @@
     }
 
     li{
-        display: inline-block;
-        text-align: center;
+        @include font($font:$fontPrimary, $size:1.4rem, $line_height:1.8rem, $color:$colorPrimary, $font_weight:700);        
+        display: table-cell;
         vertical-align: top;
         width: 12rem;
         margin: 0;
         padding-bottom: 2rem;
-        @include font($font:$fontPrimary, $size:1.4rem, $line_height:1.8rem, $color:$colorPrimary, $font_weight:700);
+        padding-top: 1rem;
         cursor: pointer;
+        transition: 1s all;
 
         span{
             display: block;
@@ -32,6 +34,10 @@
         i{
             font-weight: 400;
             font-size: 1.2rem;
+        }
+
+        &:hover{
+            background: rgba($colorPrimary, .1);
         }
     }
 }

@@ -1,13 +1,15 @@
 import { h, Component } from 'preact';
+import { default as Store } from 'core/Redux';
 import './style';
 
 class Card extends Component {
     constructor(props) {
         super(props);
-        console.log(this.props.store)
         this.state = {
-            candidate: this.props.store
+            candidate: this.props.store.candidate
         };
+
+        Store.subscribe(() => this.forceUpdate());
     }
 
     render() {

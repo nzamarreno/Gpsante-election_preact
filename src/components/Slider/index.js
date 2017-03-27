@@ -19,13 +19,9 @@ class Slider extends Component {
     }
 
     handleClick(event) {
-        if(document.querySelectorAll(".slider_slide--active").length > 1){
-        }
-        else{
-            let currentCandidate = event.target;
-            currentCandidate.classList.toggle("slider_slide--active");
-            Store.dispatch({ type: 'ADD_CANDIDAT', candidate: Datas[currentCandidate.getAttribute('numberCandidate')] })
-        }
+        let currentCandidate = event.target;
+        currentCandidate.classList.toggle("slider_slide--active");
+        Store.dispatch({ type: 'ADD_CANDIDAT', candidate: Datas[currentCandidate.getAttribute('numberCandidate')] });
     }
 
     createSlider(props){
@@ -37,6 +33,7 @@ class Slider extends Component {
             return (
                 <div onClick={event => this.handleClick(event)} className="slider_slide" style={background} numberCandidate={index}>
                     <span className="slider_slide_text">{candidate.firstName} <strong>{candidate.lastName}</strong></span>
+                    <img src="images/select_picture.svg" alt="Selected" className="slider_select"/>
                 </div>
             )
         })

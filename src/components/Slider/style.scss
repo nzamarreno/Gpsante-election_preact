@@ -20,6 +20,18 @@
         }
     }
 
+    &_select{
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        bottom: 2rem;
+        right: 1rem;
+        transform: scale(.5);
+        opacity: 0;
+        transform-origin: center;
+        transition: 1s all ease-out;
+    }
+
     &_slide{
         width: 21rem;
         height: 11.5rem;
@@ -61,6 +73,11 @@
                 bottom: 0;
                 left: 0;
                 animation: active 1s;
+            }
+
+            .slider_select{
+                transform: scale(1);
+                opacity: 1;
             }
         }
     }

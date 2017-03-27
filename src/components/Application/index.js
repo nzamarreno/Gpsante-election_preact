@@ -14,17 +14,16 @@ import { default as Store } from 'core/Redux';
 class Application extends Component {
     constructor() {
         super();
-        this.init();
     }
 
-    init() {
+    componentWillMount() {
         Store.dispatch({ type: 'ADD_CANDIDAT', candidate: Datas[0] });
         Store.dispatch({ type: 'ADD_CANDIDAT', candidate: Datas[1] });
     }
 
     render(props) {
         return (
-            <div>
+            <div className="main">
                 <Header/>
                 <Slider candidate={Datas}/>
                 <Card store={Store.getState()}/>
@@ -35,5 +34,6 @@ class Application extends Component {
     }
 
 }
+
 
 export default Application;

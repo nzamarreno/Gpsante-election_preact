@@ -1,10 +1,16 @@
 import { createStore } from 'redux'
 
 
-function compareCandidat(state = [], action) {
+function compareCandidat(state = {candidate: [], category: 0}, action) {
   switch (action.type) {
   case 'ADD_CANDIDAT':
-    state.push(action.candidate);
+    if(state.candidate.length == 2){
+        state.candidate.shift();      
+        state.candidate.push(action.candidate);
+    }
+    else{
+        state.candidate.push(action.candidate);      
+    }
     return state;
   case 'SELECT_CATEGORY':
     return state - 1

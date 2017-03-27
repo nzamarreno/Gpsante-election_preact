@@ -6,14 +6,6 @@ class Main extends Component {
         super();
     }
 
-    componentDidMount() {
-
-    }
-
-    componentWillUnmount() {
-
-    }
-
     render(props, state) {
         return(
                 <Application/>
