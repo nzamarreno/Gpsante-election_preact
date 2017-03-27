@@ -12,16 +12,16 @@ import { default as Store } from 'core/Redux';
 
 
 class Application extends Component {
-    constructor() {
+    constructor(){
         super();
     }
 
-    componentWillMount() {
+    componentWillMount(){
         Store.dispatch({ type: 'ADD_CANDIDAT', candidate: Datas[0] });
         Store.dispatch({ type: 'ADD_CANDIDAT', candidate: Datas[1] });
     }
 
-    render(props) {
+    render(props){
         return (
             <div className="main">
                 <Header/>

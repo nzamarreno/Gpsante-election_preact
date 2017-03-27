@@ -3,16 +3,18 @@ import { default as Store } from 'core/Redux';
 import './style';
 
 class Argument extends Component {
-    constructor(props) {
+    constructor(props){
         super(props);
         this.state = {
-            candidate: this.props.store.candidate
+            candidate: this.props.store.candidate,
+            category: this.props.store.category
         };
 
         Store.subscribe(() => this.forceUpdate());
     }
 
-    render() {
+    render(){
+        console.log("state", this.state)
         return (
             <div className="wrapper argument">
                 <div className="row argument_candidate">
@@ -25,15 +27,15 @@ class Argument extends Component {
                 </div>
 
                 <div className="row argument_candidate_category">
-                    Role d'assurance maladie
+                    {this.state.category[0].title}
                 </div>
 
                 <div className="row argument_candidate_compare">
                     <div className="col-6">
-                        {this.state.candidate[0].firstName}
+                        {this.state.candidate[0].program[this.state.category[0].name]}
                     </div>
                     <div className="col-6">
-                        {this.state.candidate[1].firstName}
+                        {this.state.candidate[1].program[this.state.category[0].name]}
                     </div>
                 </div>
             </div>

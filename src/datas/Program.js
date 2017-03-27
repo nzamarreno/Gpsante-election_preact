@@ -3,7 +3,8 @@ export default [{
         firstName: "Nathalie",
         pictureName: "arthaud",
         program: {
-            etude: "J'adore la politique, ca casse des culs je ne vous dis pas"            
+            etudes: "J'adore la politique, ca casse des culs je ne vous dis pas",
+            remuneration: "Nathalie bonjour"            
         }
     },
     {
@@ -11,7 +12,8 @@ export default [{
         firstName: "François",
         pictureName: "asselineau",
         program: {
-            etude: "J'adore la politique, ca casse des culs je ne vous dis pas"
+            etudes: "J'adore la politique, ca casse des culs je ne vous dis pas",
+            remuneration: "Francois comment va ?" 
         }
     },
     {
@@ -19,7 +21,8 @@ export default [{
         firstName: "Jacques",
         pictureName: "cheminade",
         program: {
-            etude: "J'adore la politique, ca casse des culs je ne vous dis pas"            
+            etudes: "J'adore la politique, ca casse des culs je ne vous dis pas",
+            remuneration: "Cheninage"            
         }
     },
     {
@@ -27,7 +30,8 @@ export default [{
         firstName: "Nicolas",
         pictureName: "dupont",
         program: {
-            etude: "J'adore la politique, ca casse des culs je ne vous dis pas"            
+            etudes: "J'adore la politique, ca casse des culs je ne vous dis pas",
+            remuneration: "casse des culs"            
         }
     },
     {
@@ -35,7 +39,8 @@ export default [{
         firstName: "François",
         pictureName: "fillon",
         program: {
-            etude: "J'adore la politique, ca casse des culs je ne vous dis pas"            
+            etudes: "J'adore la politique, ca casse des culs je ne vous dis pas",
+            remuneration: "casse des culs"            
         }
     },
     {
@@ -43,7 +48,8 @@ export default [{
         firstName: "Benoît",
         pictureName: "hamon",
         program: {
-            etude: "J'adore la politique, ca casse des culs je ne vous dis pas"            
+            etudes: "J'adore la politique, ca casse des culs je ne vous dis pas",
+            remuneration: "casse des culs"            
         }
     },
     {
@@ -51,7 +57,8 @@ export default [{
         firstName: "Jean",
         pictureName: "lassalle",
         program: {
-            etude: "J'adore la politique, ca casse des culs je ne vous dis pas"            
+            etudes: "J'adore la politique, ca casse des culs je ne vous dis pas",
+            remuneration: "casse des culs"            
         }
     },
     {
@@ -59,7 +66,8 @@ export default [{
         firstName: "Marine",
         pictureName: "lepen",
         program: {
-            etude: "J'adore la politique, ca casse des culs je ne vous dis pas"            
+            etudes: "J'adore la politique, ca casse des culs je ne vous dis pas",
+            remuneration: "casse des culs"            
         }
     },
     {
@@ -67,7 +75,8 @@ export default [{
         firstName: "Emmanuel",
         pictureName: "macron",
         program: {
-            etude: "J'adore la politique, ca casse des culs je ne vous dis pas"            
+            etudes: "J'adore la politique, ca casse des culs je ne vous dis pas",
+            remuneration: "casse des culs"            
         }
     },
     {
@@ -75,7 +84,8 @@ export default [{
         firstName: "Jean-Luc",
         pictureName: "melenchon",
         program: {
-            etude: "J'adore la politique, ca casse des culs je ne vous dis pas"            
+            etudes: "J'adore la politique, ca casse des culs je ne vous dis pas",
+            remuneration: "casse des culs"            
         }
     },
     {
@@ -83,6 +93,7 @@ export default [{
         firstName: "Philippe",
         pictureName: "poutou",
         program: {
-            etude: "J'adore la politique, ca casse des culs je ne vous dis pas"            
+            etudes: "J'adore la politique, ca casse des culs je ne vous dis pas",
+            remuneration: "casse des culs"            
         }
 }]

@@ -3,7 +3,7 @@ import { default as Store } from 'core/Redux';
 import './style';
 
 class Card extends Component {
-    constructor(props) {
+    constructor(props){
         super(props);
         this.state = {
             candidate: this.props.store.candidate
@@ -12,7 +12,11 @@ class Card extends Component {
         Store.subscribe(() => this.forceUpdate());
     }
 
-    render() {
+    componentWillReceiveProps(){
+        console.log('animation');
+    }
+
+    render(){
         let backgroundFirstCandidate = {
             backgroundImage: 'url(images/' + this.state.candidate[0].pictureName + '.jpg)'
         };
