@@ -3,8 +3,11 @@ export default [{
         firstName: "Nathalie",
         pictureName: "arthaud",
         program: {
-            etudes: "J'adore la politique, ca casse des culs je ne vous dis pas",
-            remuneration: "Nathalie bonjour"            
+            exercice: "",
+            hospital: "",
+            assurance: "",
+            desert: "",
+            santePublic: ""
         }
     },
     {
@@ -12,8 +15,11 @@ export default [{
         firstName: "François",
         pictureName: "asselineau",
         program: {
-            etudes: "J'adore la politique, ca casse des culs je ne vous dis pas",
-            remuneration: "Francois comment va ?" 
+            exercice: "",
+            hospital: "",
+            assurance: "",
+            desert: "",
+            santePublic: ""
         }
     },
     {
@@ -21,8 +27,11 @@ export default [{
         firstName: "Jacques",
         pictureName: "cheminade",
         program: {
-            etudes: "J'adore la politique, ca casse des culs je ne vous dis pas",
-            remuneration: "Cheninage"            
+            exercice: "",
+            hospital: "",
+            assurance: "",
+            desert: "",
+            santePublic: ""
         }
     },
     {
@@ -30,8 +39,11 @@ export default [{
         firstName: "Nicolas",
         pictureName: "dupont",
         program: {
-            etudes: "J'adore la politique, ca casse des culs je ne vous dis pas",
-            remuneration: "casse des culs"            
+            exercice: "",
+            hospital: "",
+            assurance: "",
+            desert: "",
+            santePublic: ""
         }
     },
     {
@@ -39,8 +51,11 @@ export default [{
         firstName: "François",
         pictureName: "fillon",
         program: {
-            etudes: "J'adore la politique, ca casse des culs je ne vous dis pas",
-            remuneration: "casse des culs"            
+            exercice: "",
+            hospital: "",
+            assurance: "",
+            desert: "",
+            santePublic: ""
         }
     },
     {
@@ -48,8 +63,11 @@ export default [{
         firstName: "Benoît",
         pictureName: "hamon",
         program: {
-            etudes: "J'adore la politique, ca casse des culs je ne vous dis pas",
-            remuneration: "casse des culs"            
+            exercice: "",
+            hospital: "",
+            assurance: "",
+            desert: "",
+            santePublic: ""
         }
     },
     {
@@ -57,8 +75,11 @@ export default [{
         firstName: "Jean",
         pictureName: "lassalle",
         program: {
-            etudes: "J'adore la politique, ca casse des culs je ne vous dis pas",
-            remuneration: "casse des culs"            
+            exercice: "",
+            hospital: "",
+            assurance: "",
+            desert: "",
+            santePublic: ""
         }
     },
     {
@@ -66,8 +87,11 @@ export default [{
         firstName: "Marine",
         pictureName: "lepen",
         program: {
-            etudes: "J'adore la politique, ca casse des culs je ne vous dis pas",
-            remuneration: "casse des culs"            
+            exercice: "",
+            hospital: "",
+            assurance: "",
+            desert: "",
+            santePublic: ""
         }
     },
     {
@@ -75,8 +99,11 @@ export default [{
         firstName: "Emmanuel",
         pictureName: "macron",
         program: {
-            etudes: "J'adore la politique, ca casse des culs je ne vous dis pas",
-            remuneration: "casse des culs"            
+            exercice: "",
+            hospital: "",
+            assurance: "",
+            desert: "",
+            santePublic: ""
         }
     },
     {
@@ -84,8 +111,11 @@ export default [{
         firstName: "Jean-Luc",
         pictureName: "melenchon",
         program: {
-            etudes: "J'adore la politique, ca casse des culs je ne vous dis pas",
-            remuneration: "casse des culs"            
+            exercice: "",
+            hospital: "",
+            assurance: "",
+            desert: "",
+            santePublic: ""
         }
     },
     {
@@ -93,7 +123,10 @@ export default [{
         firstName: "Philippe",
         pictureName: "poutou",
         program: {
-            etudes: "J'adore la politique, ca casse des culs je ne vous dis pas",
-            remuneration: "casse des culs"            
+            exercice: "",
+            hospital: "",
+            assurance: "",
+            desert: "",
+            santePublic: ""
         }
 }]

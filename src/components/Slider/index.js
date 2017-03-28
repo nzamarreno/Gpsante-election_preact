@@ -18,35 +18,51 @@ class Slider extends Component {
             draggable: false
         });
 
+        
+        this.refreshSelectedCandidate();    
+    }
+
+    refreshSelectedCandidate(){
         /**
          * Init Candidates Selected
          * @param {this.state.currentCandidate} Index of item in the slider
          */
         let listCandidate = document.querySelectorAll(".slider_slide");
+
+        /**
+         * Remove Class on all slide
+         */
+        for(let candidate of listCandidate){
+            candidate.classList.remove("slider_slide--active");
+        }
+
+        /**
+         * And Add class on candidate selected 
+         */
         this.state.currentCandidate.forEach(index => {
             listCandidate[index].classList.add("slider_slide--active");
-        })      
+        }) 
     }
 
     handleClick(event){
         let currentCandidate = event.target;
-        currentCandidate.classList.toggle("slider_slide--active");
         Store.dispatch({    
             type: 'ADD_CANDIDAT', 
             candidate: Datas[currentCandidate.getAttribute('numberCandidate')] 
         });
 
-        this.ChangeChoice(currentCandidate.getAttribute('numberCandidate'))
+        this.ChangeChoice(currentCandidate.getAttribute('numberCandidate'));
     }
 
     ChangeChoice(indexCurrentCandidate){
-        let oldIndex = this.state.currentCandidate.slice();
-        let newIndex = oldIndex.push(indexCurrentCandidate);
-        let test = this.setState({
-            currentCandidate: newIndex
-        });
-        //let listCandidate = document.querySelectorAll(".slider_slide"); 
-        // Construct array with this.state.currentCandidate[1] and the new index
+        let newSelected = [];
+        newSelected.push(this.state.currentCandidate[1], Number(indexCurrentCandidate));       
+        console.log(newSelected);
+        this.setState({
+            currentCandidate: newSelected
+        }); 
+
+        this.refreshSelectedCandidate();            
     }
 
     createSlider(props){
@@ -64,10 +80,19 @@ class Slider extends Component {
         })
     }
 
+    /**
+     * Disable rerender when state is refresh
+     * @param {object} nextProps 
+     * @param {object} nextState 
+     */
+    shouldComponentUpdate(nextProps, nextState) {
+        return false;
+    }
+
     render(){
         return (
             <div className="wrapper slider">
-                <h2 className="slider_title text--center"><span>Choisissez</span> <br/>votre thematique & vos 2 candidats </h2>
+                <h2 className="slider_title"><span><strong>Choisissez</strong> vos 2 candidats</span></h2>
                 
                 <div className="slider_wrapper">
                     {this.createSlider()}

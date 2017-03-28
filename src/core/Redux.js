@@ -1,7 +1,7 @@
 import { createStore } from 'redux'
 
 
-function compareCandidat(state = {candidate: [], category: [{name: "etudes", title: "Étude de médecine"}]}, action) {
+function compareCandidat(state = {candidate: [], category: [{name: "exercice", title: "Étude de médecine"}]}, action) {
   switch (action.type){
   case 'ADD_CANDIDAT':
     if(state.candidate.length == 2){
