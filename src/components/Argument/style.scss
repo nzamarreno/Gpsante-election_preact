@@ -49,9 +49,13 @@
         &_compare{
             margin: 7rem 0;
 
-            & > div{
-                @include font($font:$fontPrimary, $size:1.6rem, $line_height:2.4rem, $color:$colorPrimary, $font_weight:400);
+            ul{
+                vertical-align: top;
                 padding: 0 4rem;
+
+                li{
+                    @include font($font:$fontPrimary, $size:1.6rem, $line_height:2.4rem, $color:$colorPrimary, $font_weight:400);
+                }
             }
         }
     }

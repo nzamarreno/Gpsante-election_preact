@@ -12,8 +12,8 @@ class Card extends Component {
         Store.subscribe(() => this.forceUpdate());
     }
 
-    componentWillReceiveProps(){
-        console.log('animation');
+    componentWillMount() {
+        console.log("bon")
     }
 
     render(){

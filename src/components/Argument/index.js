@@ -30,12 +30,12 @@ class Argument extends Component {
                 </div>
 
                 <div className="row argument_candidate_compare">
-                    <div className="col-6">
-                        {this.state.candidate[0].program[this.state.category[0].name]}
-                    </div>
-                    <div className="col-6">
-                        {this.state.candidate[1].program[this.state.category[0].name]}
-                    </div>
+                    <ul className="col-6"
+                        dangerouslySetInnerHTML={{__html:this.state.candidate[0].program[this.state.category[0].name]}}>
+                    </ul>
+                    <ul className="col-6"
+                        dangerouslySetInnerHTML={{__html:this.state.candidate[1].program[this.state.category[0].name]}}>
+                    </ul>
                 </div>
             </div>
         )
