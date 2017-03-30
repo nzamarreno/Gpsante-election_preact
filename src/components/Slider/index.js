@@ -58,7 +58,6 @@ class Slider extends Component {
     ChangeChoice(indexCurrentCandidate){
         let newSelected = [];
         newSelected.push(this.state.currentCandidate[1], Number(indexCurrentCandidate));       
-        console.log(newSelected);
         this.setState({
             currentCandidate: newSelected
         }); 

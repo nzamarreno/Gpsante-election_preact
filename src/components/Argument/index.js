@@ -25,10 +25,6 @@ class Argument extends Component {
                     </div>
                 </div>
 
-                <div className="row argument_candidate_category">
-                    {this.state.category[0].title}
-                </div>
-
                 <div className="row argument_candidate_compare">
                     <ul className="col-6"
                         dangerouslySetInnerHTML={{__html:this.state.candidate[0].program[this.state.category[0].name]}}>

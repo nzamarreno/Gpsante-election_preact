@@ -3041,11 +3041,6 @@ class Argument extends __WEBPACK_IMPORTED_MODULE_0_preact__["Component"] {
             ),
             __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
                 'div',
-                { className: 'row argument_candidate_category' },
-                this.state.category[0].title
-            ),
-            __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-                'div',
                 { className: 'row argument_candidate_compare' },
                 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])('ul', { className: 'col-6',
                     dangerouslySetInnerHTML: { __html: this.state.candidate[0].program[this.state.category[0].name] } }),
@@ -3299,13 +3294,13 @@ class Navbar extends __WEBPACK_IMPORTED_MODULE_0_preact__["Component"] {
     }
 
     handleClick(event) {
+        event.preventDefault();
         let listItems = document.querySelectorAll(".navbar li");
         for (let item of listItems) {
             item.classList.remove("navbar--active");
         }
 
-        let currentCategory = event.target;
-        console.log(currentCategory);
+        let currentCategory = event.currentTarget;
         currentCategory.classList.toggle("navbar--active");
 
         __WEBPACK_IMPORTED_MODULE_1_core_Redux__["a" /* default */].dispatch({
@@ -3326,11 +3321,11 @@ class Navbar extends __WEBPACK_IMPORTED_MODULE_0_preact__["Component"] {
                 { className: 'navbar' },
                 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
                     'li',
-                    { onClick: event => this.handleClick(event), 'data-rubric': 'exercice', 'data-name': 'Exercice lib\xE9rale', className: 'navbar--active' },
+                    { onClick: event => this.handleClick(event), 'data-rubric': 'exercice', 'data-name': 'Exercice lib\xE9ral', className: 'navbar--active' },
                     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])('span', { className: 'icon-coins' }),
                     'Exercice ',
                     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])('br', null),
-                    'lib\xE9rale'
+                    'lib\xE9ral'
                 ),
                 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
                     'li',
@@ -3429,7 +3424,8 @@ class Slider extends __WEBPACK_IMPORTED_MODULE_0_preact__["Component"] {
     }
 
     handleClick(event) {
-        let currentCandidate = event.target;
+        event.preventDefault();
+        let currentCandidate = event.currentTarget;
         __WEBPACK_IMPORTED_MODULE_2_core_Redux__["a" /* default */].dispatch({
             type: 'ADD_CANDIDAT',
             candidate: __WEBPACK_IMPORTED_MODULE_3_datas_Program__["a" /* default */][currentCandidate.getAttribute('numberCandidate')]
@@ -3441,7 +3437,6 @@ class Slider extends __WEBPACK_IMPORTED_MODULE_0_preact__["Component"] {
     ChangeChoice(indexCurrentCandidate) {
         let newSelected = [];
         newSelected.push(this.state.currentCandidate[1], Number(indexCurrentCandidate));
-        console.log(newSelected);
         this.setState({
             currentCandidate: newSelected
         });
