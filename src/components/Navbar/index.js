@@ -8,14 +8,13 @@ class Navbar extends Component {
     }
 
     handleClick(event){
-        event.stopPropagation();
         let listItems = document.querySelectorAll(".navbar li");
         for(let item of listItems){
-            console.log(item)
             item.classList.remove("navbar--active");
         }
 
         let currentCategory = event.target;
+        console.log(currentCategory)
         currentCategory.classList.toggle("navbar--active");
 
         Store.dispatch({ 
@@ -31,27 +30,30 @@ class Navbar extends Component {
         return (
             <div className="wrapper text--center">
                 <ul className="navbar">
-                    <li onClick={event => this.handleClick(event)} data-rubric="exercice" data-name="Rémunération">
+                    <li onClick={event => this.handleClick(event)} data-rubric="exercice" data-name="Exercice libérale" className="navbar--active">
                         <span className="icon-coins"></span>
-                        Exercice Liberale
+                        Exercice <br/>
+                        libérale
                     </li>
                     <li onClick={event => this.handleClick(event)} data-rubric="hospital" data-name="Hôpital">
                         <span className="icon-hospital"></span>
                         Hôpital
                     </li>
-                    <li onClick={event => this.handleClick(event)} data-rubric="assurance" data-name="Rôle assurance maladie">
+                    <li onClick={event => this.handleClick(event)} data-rubric="assurance" data-name="Assurance maladie">
                         <span className="icon-assurance"></span>
                         Assurance <br/>
                         maladie
                     </li>
-                    <li onClick={event => this.handleClick(event)} data-rubric="desert" data-name="Mode d'exercice">
+                    <li onClick={event => this.handleClick(event)} data-rubric="desert" data-name="Déserts médicaux">
                         <span className="icon-exercice"></span>
-                        Déserts médicaux
+                        Déserts <br/>
+                        médicaux
                     </li>
                     
-                    <li onClick={event => this.handleClick(event)} data-rubric="santePublic" data-name="AME (Aide Médecical d'état)">
+                    <li onClick={event => this.handleClick(event)} data-rubric="santePublic" data-name="Santé Publique">
                         <span className="icon-ame"></span>
-                        Santé<br/>publique
+                        Santé<br/>
+                        publique
                     </li>
                 </ul>
             </div>

@@ -16,6 +16,15 @@
         padding-top: 3rem;
         padding-bottom: 3rem;
 
+        &_transition{
+            position: absolute;
+            top: 0;
+            left: -100%;
+            height: 100%;
+            width: 100%;
+            background: $colorPrimary;
+        }
+
         &:after{
             content: "VS";
             @include font($font:$fontSecond, $size:5.5rem, $line_height:13rem, $color:$white, $font_weight:400);
@@ -38,15 +47,26 @@
         padding-right: 5.5rem !important;
         padding-top: 3rem;
         padding-bottom: 3rem;
+
+        &_transition{
+            position: absolute;
+            top: 0;
+            left: -100%;
+            height: 100%;
+            width: 100%;
+            background: white;
+        }
     }
 
     &_picture{
         width: 100%;
         height: 18rem;
+        position: relative;
         //border-radius: .8rem;
         background-size: cover;
         background-position: right top;
         background-color: $colorPrimary;
+        overflow: hidden;
         background-blend-mode: screen;
     }
 
@@ -68,4 +88,9 @@
           display: block; 
        } 
     }
+}
+
+.mask{
+    overflow: hidden;
+    padding-bottom: 1rem;
 }

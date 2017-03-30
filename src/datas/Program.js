@@ -2,6 +2,7 @@ export default [{
         lastName: "Arthaud",
         firstName: "Nathalie",
         pictureName: "arthaud",
+        partie: "Lutte ouvrière",
         program: {
             exercice: "<li>Supprimer les dépassements d'honoraires</li>",
             hospital: "<li>Supprimer la T2A</li><li>Mettre fin à une logique de productivité et de rentabilité à l'hôpital</li><li>Stopper les suppressions d'emplois</li>",
@@ -14,6 +15,7 @@ export default [{
         lastName: "Asselineau",
         firstName: "François",
         pictureName: "asselineau",
+        partie: "Union populaire républicaine",        
         program: {
             exercice: "<li>Réaffirmer le libre choix du médecin par le malade</li><li>Réaffirmer la liberté des prescriptions du médecin</li><li>Assurer l'entente directe entre malade et médecin en matière d'honoraires</li><li>Assurer le paiement direct des honoraires par le malade au médecin</li>",
             hospital: "<li>Réévaluer les salaires du personnel des hôpitaux publics</li><li>Stopper les regroupements d'établissements</li><li>Revoir tous les projets de fermeture</li><li>Redonner à la recherfhe hospitalière son indépendance vis-à-vis des ARS</li>",
@@ -26,6 +28,7 @@ export default [{
         lastName: "Cheminade",
         firstName: "Jacques",
         pictureName: "cheminade",
+        partie: "Solidarité et progrès",        
         program: {
             exercice: "<li>Donner aux médecins les moyens d'aide à la prescription</li><li>Fixer à 30 euros le tarif de la consultation de médecine générale</li><li>Majorer les visites à domicile</li><li>Intégrer dans la rémunération à l'acte un montant forfaitaire modulé en fonction de la pathologie, la gravité...</li><li>Étudier un système de rémunération complémentaire en fonction du nombre de patients traités par semaine et dans l'année</li><li>Réduire les contraintes administratives (grâce à une Sécurité sociale intégrale)</li><li>Moduler la rémunération en fonction de la zone d'exercice (ex. : +20 % dans une zone sous-médicalisée)</li>",
             hospital: "<li>Augmenter le nombre de scanners et d'IRM</li><li>Abandonner la T2A au profit d'une rémunération à la pathologie et à la performance</li><li>Développer l'ambulatoire, multiplier les robots chirurgiens</li><li>Améliorer la logistique et l'organisation interne de l'hôpital</li><li>Créer une consultation de médecine générale dans chaque service d'urgence</li><li>Regrouper les hôpitaux, reconvertir les structures pour éviter les fermetures « sèches »</li><li>Augmenter les moyens dévolus aux unités de soins palliatifs</li>",
@@ -38,6 +41,7 @@ export default [{
         lastName: "Dupont-Aignan",
         firstName: "Nicolas",
         pictureName: "dupont",
+        partie: "Debout la France !",        
         program: {
             exercice: "<li>Revaloriser à 35 € la consultation médicale des généralistes en échange d'une plus grande implication dans la prévention</li><li>Revoir à la hausse tous les tarifs de remboursements des actes les plus lourds</li><li>Mettre fin à l'obligation de tiers payant généralisé</li><li>Simplifier et dématérialiser l'ensemble des tâches administratives </li><li>Permettre les délégations de compétences afin que les médecins puissent embaucher des collaborateurs</li><li>Améliorer la couverture sociale des femmes en congé maternité et permettre une couverture sociale des accidents du travail des libéraux</li>",
             hospital: "<li>Renforcer les moyens de sécurité</li><li>Prendre en compte la pénibilité du travail des personnels par la création de primes</li><li>Augmenter les effectifs des aides-soignants et des aides médicaux psychologiques en EHPAD</li><li>Revoir l'organisation de l'hôpital public : associer les soignants à sa gouvernance, déconcentration budgétaire par pôles et services</li><li>Défendre l'hôspitalisation privée pour assurer la diversité des établissements</li>",
@@ -50,6 +54,7 @@ export default [{
         lastName: "Fillon",
         firstName: "François",
         pictureName: "fillon",
+        partie: "Les Républicains",        
         program: {
             exercice: "<li>Abroger l'obligation d'appliquer le tiers payant</li><li>Redonner du temps médical aux médecins</li><li>Généraliser la télémédecine et les téléconsultations, grâce à un remboursement incitatif de ces actes</li><li>Maintenir la ROSP</li><li>Rémunération complémentaire sur des objectifs négociés et sur des missions de santé publique </li><li>Développer l'informatisation du cabinet (DMP, communications entre professionnels...)</li>",
             hospital: "<li>Recomposer la carte hospitalière selon des critères de qualité, d'activité et pas seulement de proximité (en fermant éventuellement certaines petites structures)</li><li>Désengorger les urgences en développant les maisons médicales et les structures de petites urgences</li><li>Donner l’autonomie aux hôpitaux publics pour améliorer leur efficacité et les conditions de travail des personnels hospitalier</li><li>Transformer les groupements hospitaliers de territoire (GHT) en groupements de santé de territoire (GST) pour les ouvrir au maximum aux cliniques privées et aux médecins libéraux</li><li>Créer un label « Hôpital France » pour valoriser l'expertise à l'étranger</li><li>Augmenter progressivement le temps de travail à 39 heures</li><li>Remplacer un départ d’agents publics sur deux en moyenne dans la fonction publique</li>",
@@ -62,6 +67,7 @@ export default [{
         lastName: "Hamon",
         firstName: "Benoît",
         pictureName: "hamon",
+        partie: "Parti socialiste",        
         program: {
             exercice: "<li>Maintenir le tiers payant généralisé</li><li>Réduire les dépassements d'honoraires</li><li>Limiter au secteur I les installations dans les zones où l'accès aux soins sans dépassement d’honoraires est insuffisante</li>",
             hospital: "<li>Fin du 100 % T2A</li><li>Organiser un plan de revalorisation des carrières et de recrutement</li><li>Ouvrir le chantier de l'organisation du travail</li><li>Lancer un plan d'investissement « Hôpital digital 20122 » et rénover les bâtiments vétustes</li><li>Créer des espaces de médecine générale adossés à l'hôpital pour soulager les urgences</li>",
@@ -74,6 +80,7 @@ export default [{
         lastName: "Lassalle",
         firstName: "Jean",
         pictureName: "lassalle",
+        partie: "Résistons !",        
         program: {
             exercice: "",
             assurance: "",
@@ -85,6 +92,7 @@ export default [{
         lastName: "Le Pen",
         firstName: "Marine",
         pictureName: "lepen",
+        partie: "Front national",        
         program: {
             exercice: "<li>Protéger la complémentarité du double système de santé public et libéral</li><li>Évaluer l'efficacité du tiers payant généralisé</li>",
             hospital: "<li>Maintenir au maximum les hôpitaux de santé</li><li>Augmenter les effectifs de la fonction publique hospitalière</li>",
@@ -97,6 +105,7 @@ export default [{
         lastName: "Macron",
         firstName: "Emmanuel",
         pictureName: "macron",
+        partie: "En Marche !",        
         program: {
             exercice: "<li>Évaluer les bénéfices du tiers payant généralisé</li><li>Débloquer 5 milliards d'euros pour la médecine de ville et l'hôpital</li><li>Faire évoluer la rémunération pour mieux valoriser les actions de prévention</li>",
             hospital: "<li>Renforcer l'autonomie des établissements en diversifiant les modes de rémunération des professionnels et les modes de financement</li><li>Accélérer le déploiement des GHT</li><li>Réduire la place de la T2A pour favoriser des financements liés à des objectifs précis et des missions de santé publique</li><li>Renforcer la coordination des soins entre libéraux, hôpitaux, paramédicaux</li>",
@@ -109,6 +118,7 @@ export default [{
         lastName: "Mélenchon",
         firstName: "Jean-Luc",
         pictureName: "melenchon",
+        partie: "Parti de gauche",        
         program: {
             exercice: "<li>Interdire les dépassements d'honoraires</li><li>Réduire la place du paiement à l'acte</li><li>Supprimer le Conseil national de l'Ordre des médecins</li>",
             hospital: "<li>Sortir du « tout T2A » sauf pour les actes techniques standardisés et programmés</li><li>Recruter 62 500 soignants et médecins</li><li>Réorganiser le secteur médico-social et le secteur psychiatrique</li><li>Développer massivement les centres de santé locaux et pluridisciplinaires</li>",
@@ -121,6 +131,7 @@ export default [{
         lastName: "Poutou",
         firstName: "Philippe",
         pictureName: "poutou",
+        partie: "Nouveau parti anticapitaliste",        
         program: {
             exercice: "<li>Interdire les dépassements d'honoraires</li><li>Garantir le tiers payant intégral</li>",
             hospital: "<li>Mettre fin à la T2A</li><li>Créer 120 000 emplois pour maintenir les établissements de proximité</li><li>Créer des centres de santé publics ouverts 24h/24 pour la médecine de proximité</li><li>Exproprier les actionnaires des cliniques privées et intégrer ces établissements au service public</li>",
