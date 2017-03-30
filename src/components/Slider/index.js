@@ -45,7 +45,8 @@ class Slider extends Component {
     }
 
     handleClick(event){
-        let currentCandidate = event.target;
+        event.preventDefault();
+        let currentCandidate = event.currentTarget;
         Store.dispatch({    
             type: 'ADD_CANDIDAT', 
             candidate: Datas[currentCandidate.getAttribute('numberCandidate')] 

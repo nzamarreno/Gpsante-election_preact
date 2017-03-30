@@ -28,7 +28,8 @@
     "webpack-dev-server": "^2.4.2"
   },
   "scripts": {
-    "build": "node_modules/.bin/webpack-dev-server"
+    "build": "node_modules/.bin/webpack-dev-server",
+    "webpack": "node_modules/.bin/webpack"
   },
   "author": "Nicolas Zamarreno",
   "license": "ISC"

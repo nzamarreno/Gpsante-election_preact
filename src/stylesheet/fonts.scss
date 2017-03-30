@@ -20,8 +20,7 @@
 
 @font-face {
   font-family: 'SkolaSans';
-  src: url('/fonts/SkolaSans-Bold.eot'); /* IE9 Compat Modes */
-  src: url('/fonts/SkolaSans-Bold.eot?#iefix') format('embedded-opentype'); /* Legacy iOS */
+  src: url('/fonts/SkolaSans-Bold.otf') format('truetype'); /* IE9 Compat Modes */
 
   font-style:   normal;
   font-weight:  700;
@@ -29,8 +28,7 @@
 
 @font-face {
   font-family: 'SkolaSans';
-  src: url('/fonts/SkolaSans-Regular.eot'); /* IE9 Compat Modes */
-  src: url('/fonts/SkolaSans-Regular.eot?#iefix') format('embedded-opentype'); /* Legacy iOS */
+  src: url('/fonts/SkolaSans-Regular.otf') format('truetype'); /* IE9 Compat Modes */
 
   font-style:   normal;
   font-weight:  400;

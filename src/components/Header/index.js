@@ -20,8 +20,8 @@ class Header extends Component {
                                 <img src="images/pictogramme_election.png" alt=""/>
                                 <h3 className="header_election_text">
                                     <span>special</span>
-                                    election <br/>
-                                    presidentielle
+                                    élection <br/>
+                                    présidentielle
                                 </h3>
                             </div>
                         </div>

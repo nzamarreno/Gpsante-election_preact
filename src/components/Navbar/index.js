@@ -8,13 +8,13 @@ class Navbar extends Component {
     }
 
     handleClick(event){
+        event.preventDefault();
         let listItems = document.querySelectorAll(".navbar li");
         for(let item of listItems){
             item.classList.remove("navbar--active");
         }
 
-        let currentCategory = event.target;
-        console.log(currentCategory)
+        let currentCategory = event.currentTarget;
         currentCategory.classList.toggle("navbar--active");
 
         Store.dispatch({ 
@@ -30,10 +30,10 @@ class Navbar extends Component {
         return (
             <div className="wrapper text--center">
                 <ul className="navbar">
-                    <li onClick={event => this.handleClick(event)} data-rubric="exercice" data-name="Exercice libérale" className="navbar--active">
+                    <li onClick={event => this.handleClick(event)} data-rubric="exercice" data-name="Exercice libéral" className="navbar--active">
                         <span className="icon-coins"></span>
                         Exercice <br/>
-                        libérale
+                        libéral
                     </li>
                     <li onClick={event => this.handleClick(event)} data-rubric="hospital" data-name="Hôpital">
                         <span className="icon-hospital"></span>
