@@ -1,29 +1,35 @@
-French Election 2017 with React
-========
+Comparateur Election (PREACT)
+===========
 
-> Compare yours candidates  
+Vous trouverez ci-dessous les différentes étapes qui vous permettrons de changer rapidement les informations de la carte.
 
-Compile Sass files and Javascript with Babel
-
-## Technologies
-- Preact
+## Technologies utilisées 
 - Webpack 2
-- Babel
+- Javascript ES6
+- NodeJS
+- NPM
+- SASS
+- Preact (React mais plus light)
 
-Install NPM
-```bash
+## Installation des dépendances 
+Vouu devez avoir Node & NPM installés sur votre machine
+
+```
 $ npm install
-``` 
+```
 
-Launch Webpack
-```bash
-$ webpack
-``` 
+## Commandes possibles 
+**Lancement du serveur de développement**
 
-Launch Webpack Server
-```bash
-$ npm run build
-``` 
+```
+$ npm run dev
+```
+
+**Mise en production**
+
+```
+$ npm run prod
+```
 
 Made with ❤
 

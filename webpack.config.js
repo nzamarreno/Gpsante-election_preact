@@ -1,13 +1,15 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const webpack = require('webpack');
 
-module.exports = {
-    context: path.resolve(__dirname, 'src'),
+const config = {
+    context: path.resolve(__dirname, './src'),
     entry: ['./Main.js', './stylesheet/main.scss'],
 	output: {
-		path: path.resolve(__dirname, 'dist'),
+		path: path.resolve(__dirname, './dist'),
 		filename: './bundle.js',
-		publicPath: '/dist/'
+		publicPath: '/'
 	},
 	module: {
 		rules: [
@@ -20,15 +22,12 @@ module.exports = {
 				    {
 				        loader: 'css-loader',
                         options: {
-                            sourceMap: true
+                            sourceMap: (process.env ? false : true),
+                            url: false //disable module path for background (publicPath is important)
                         }
                     },
                     {
-                        loader: 'postcss-loader',
-                        //load postcss.config.js with options plugins
-                        options: {
-                            sourceMap: 'inline'
-                        }
+                        loader: 'postcss-loader'
                     },
                     {
                         loader: 'sass-loader'
@@ -62,17 +61,39 @@ module.exports = {
             '.scss'
         ]
     },
-	devServer: {
-        port: process.env.PORT || 8080,
-        host: 'localhost',
-        publicPath: '/',
-        contentBase: './dist',
-        historyApiFallback: true,
-        open: true
-	},
 	plugins: [
 		new ExtractTextPlugin({
 			filename: 'style.css'
-		})
-	]	
-}
+		}),
+        new CopyWebpackPlugin(
+            [
+                { from: 'index.html' },
+                { from: 'images/**/*'  },
+                { from: 'fonts/**/*'  },
+            ]
+        )
+	],	
+};
+
+module.exports = env => {
+    if (env.production) {
+        config.plugins.push(
+            new webpack.optimize.UglifyJsPlugin({
+                compress: {
+                    warnings: false,
+                    drop_console: true,
+                }
+            })
+        );
+    } 
+    if(env.dev) {
+        console.log('developpement')
+        config.devServer = {
+            contentBase: path.resolve(__dirname, "./src"),
+            https: false,
+            open: false
+        }
+    }
+
+    return config;
+};

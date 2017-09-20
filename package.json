@@ -17,6 +17,7 @@
     "babel-preset-env": "^1.2.2",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.23.0",
+    "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.27.3",
     "css-mqpacker": "^5.0.1",
     "extract-text-webpack-plugin": "^2.1.0",
@@ -29,8 +30,8 @@
     "webpack-dev-server": "^2.4.2"
   },
   "scripts": {
-    "build": "node_modules/.bin/webpack-dev-server",
-    "webpack": "node_modules/.bin/webpack"
+    "dev": "webpack-dev-server --env.dev",
+    "prod": "node_modules/.bin/webpack --env.production"
   },
   "author": "Nicolas Zamarreno",
   "license": "ISC"
